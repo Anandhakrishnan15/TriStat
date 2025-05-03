@@ -1,0 +1,55 @@
+/* Navbar Styles */
+.navbar {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* max-width: 1200px;  */
+  margin: 0 auto;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar.light {
+  background-color: white;
+  color: black;
+}
+
+.navbar.dark {
+  background-color: #2d3748; /* Dark grayish blue */
+  color: white;
+}
+
+.navbar .logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.navbar .tagline {
+  font-style: italic;
+}
+
+.navbar .nav-links a {
+  margin-left: 16px;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+
+.navbar .nav-links a:hover {
+  text-decoration: underline;
+}
+
+.navbar .toggle-btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 2px solid #ccc;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Optional: Smooth transition for dark mode */
+body.dark {
+  background-color: #1a202c; /* Dark blue background for the whole page */
+  color: white;
+}
